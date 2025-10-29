@@ -1,17 +1,18 @@
 #!/bin/sh
 
-file="/home/aditya/Desktop/file.txt"
+echo "Enter full path of the file:"
+read file
 LOG="/home/aditya/Desktop/file_changes.log"
 
 if [ ! -f "$file" ]; then
-    echo "Error: File '$file' not found"
+    echo "Error: '$file' not found"
     exit 1
 fi
 
 trap 'echo "\nMonitoring stopped"; exit 0' INT TERM
 
 echo "Monitoring '$file' for changes..."
-echo "Press Ctrl+C to stop"
+echo "Ctrl+C to stop"
 echo ""
 
 prev_state=$(ls -l "$file")
