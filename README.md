@@ -94,6 +94,12 @@ To change the log location, edit the `LOG` variable at the top of the script:
 LOG="/your/custom/path/file_changes.log"
 ```
 
+## Screenshots
+
+<img width="607" height="414" alt="image" src="https://github.com/user-attachments/assets/ab6f2b6d-254f-490c-8fbf-7b430cf62913" /> <img width="666" height="416" alt="image" src="https://github.com/user-attachments/assets/1a4d08d6-14cb-4668-9dab-f9f84a0c8051" /> 
+<img width="514" height="237" alt="image" src="https://github.com/user-attachments/assets/57c3ac94-81d6-4bb6-9540-80d84a3f4f30" /> <img width="869" height="514" alt="image" src="https://github.com/user-attachments/assets/35094317-db16-4fef-9038-65b822c13b3b" />
+<img width="510" height="351" alt="image" src="https://github.com/user-attachments/assets/f2567415-37f8-4aef-bd49-f6b0422cb5c1" />
+
 ## How It Works
 
 The script uses the `ls -l` command to capture file metadata and compares it every 2 seconds. When a change is detected (modification time, size, or permissions), it logs the event with a timestamp to the log file.
