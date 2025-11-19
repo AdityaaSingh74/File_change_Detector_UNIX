@@ -33,21 +33,26 @@ chmod +x file_monitor.sh
 
 ## How to Run
 
-1. **Start the script:**
+1.**Change log file directory:**
+   ```bash
+   ./file_changes.log
+   ```
+
+2. **Start the script:**
    ```bash
    ./file_monitor.sh
    ```
 
-2. **Set a file to monitor:**
+3. **Set a file to monitor:**
    - Select option `1` from the menu
    - Enter the full path of the file you want to monitor (e.g., `/home/user/test.txt`)
 
-3. **Start monitoring:**
+4. **Start monitoring:**
    - Select option `2` from the menu
    - The script will now watch for changes to your file
    - Press `Ctrl+C` to stop monitoring and return to the menu
 
-4. **View logs:**
+5. **View logs:**
    - Select option `3` to view all recorded changes
 
 ## Usage Example
